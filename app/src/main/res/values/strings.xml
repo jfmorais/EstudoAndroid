@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EstudosAndroid</string>
+    <string name="cep_ws">https://viacep.com.br/</string>
+</resources>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.curymorais.estudoandroid.MainActivity" >
+
+    <Button
+        android:id="@+id/bt_async_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run Async task"
+        android:onClick="startAsyncTask"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+    <Button
+        android:id="@+id/bt_volley"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startVolley"
+        android:text="Volley Example"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/bt_volleyCEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startVolleyCEP"
+        android:text="Volley CEP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+    <Button
+        android:id="@+id/bt_mvp_CEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startRetrofitCEP"
+        android:text="Find CEP - asynctask retrofit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

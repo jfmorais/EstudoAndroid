@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnImageLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/networkImageView"
+        android:layout_alignStart="@+id/networkImageView"
+        android:layout_below="@+id/networkImageView"
+        android:layout_marginTop="16dp"
+
+        android:text="LOAD IMAGE" />
+
+    <Button
+        android:id="@+id/btnImageRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnImageLoader"
+        android:layout_alignBottom="@+id/btnImageLoader"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+
+        android:text="IMAGE REQUEST" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/networkImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp" />
+
+
+    <Button
+        android:id="@+id/btnGET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnPOST"
+        android:layout_alignLeft="@+id/btnPOST"
+        android:layout_alignRight="@+id/btnPOST"
+        android:layout_alignStart="@+id/btnPOST"
+        android:layout_centerVertical="true"
+
+        android:text="GET String JSON" />
+
+    <Button
+        android:id="@+id/btnPOST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGET"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="8dp"
+        android:text="POST String JSON" />
+
+
+    <Button
+        android:id="@+id/btnCustomRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnPOST"
+        android:layout_alignLeft="@+id/btnPOST"
+        android:layout_alignRight="@+id/btnPOST"
+        android:layout_alignStart="@+id/btnPOST"
+        android:layout_below="@+id/btnPOST"
+        android:layout_marginTop="8dp"
+
+        android:text="CUSTOM REQUEST" />
+
+</RelativeLayout>

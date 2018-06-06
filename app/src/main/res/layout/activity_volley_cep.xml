@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_cep"
+        android:layout_width="match_parent"
+        android:text="Entre com o CEP abaixo:"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/val_cep"
+        android:layout_width="150sp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txt_cep"/>
+
+    <Button
+        android:id="@+id/bt_consultaCEP"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/val_cep"
+        android:text="CONSULTAR CEP"
+        android:onClick="consultaCep"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/end_cep"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/bt_consultaCEP"/>
+
+</RelativeLayout>
